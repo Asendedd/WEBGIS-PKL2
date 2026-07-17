@@ -1,0 +1,44 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kelompok Lansia",
+        "kategori": "Lansia",
+        "count": 42,
+        "level": "Tinggi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.2980, -7.5010]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kelompok Ibu Hamil",
+        "kategori": "Ibu Hamil",
+        "count": 18,
+        "level": "Sedang"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.3030, -7.5075]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kelompok Anak-anak",
+        "kategori": "Anak-anak",
+        "count": 33,
+        "level": "Tinggi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.2890, -7.5085]
+      }
+    }
+  ]
+}

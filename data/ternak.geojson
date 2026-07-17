@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kandang Timur",
+        "ternak_total": 120,
+        "proporsi": "35%"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [110.2925, -7.5050],
+            [110.3000, -7.5050],
+            [110.3020, -7.5135],
+            [110.2950, -7.5150],
+            [110.2925, -7.5050]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kandang Barat",
+        "ternak_total": 90,
+        "proporsi": "26%"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [110.2860, -7.4950],
+            [110.2920, -7.4950],
+            [110.2940, -7.5020],
+            [110.2880, -7.5030],
+            [110.2860, -7.4950]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kandang Selatan",
+        "ternak_total": 135,
+        "proporsi": "39%"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [110.2970, -7.5200],
+            [110.3050, -7.5180],
+            [110.3075, -7.5250],
+            [110.3000, -7.5280],
+            [110.2970, -7.5200]
+          ]
+        ]
+      }
+    }
+  ]
+}

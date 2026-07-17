@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jalan Utama",
+        "status": "Baik",
+        "keterangan": "Penerangan jalan terpasang sepanjang koridor utama"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [110.2910, -7.5025],
+          [110.3000, -7.5060],
+          [110.3070, -7.5130]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jalan Sekunder",
+        "status": "Kurang",
+        "keterangan": "Beberapa titik penerangan padam dan jarak tiang panjang"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [110.2850, -7.4940],
+          [110.2920, -7.4970],
+          [110.2950, -7.5035]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jalan Lingkungan",
+        "status": "Tidak Ada",
+        "keterangan": "Belum tersedia penerangan pada lingkungan permukiman"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [110.2985, -7.5190],
+          [110.3035, -7.5220],
+          [110.3055, -7.5270]
+        ]
+      }
+    }
+  ]
+}
