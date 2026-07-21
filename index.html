@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dimanjar 1 WebGIS</title>
+  <title>Dimajar 1 WebGIS</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.9.0/proj4.js"></script>
   <style>
     :root {
       --bg: #f3f7f0;
@@ -725,7 +727,7 @@
         <a class="brand" href="#">
           <span>🗺️</span>
           <div>
-            <div>Dimanjar 1</div>
+            <div>Dimajar 1</div>
             <div style="font-size:0.75rem; opacity:0.8;">WebGIS</div>
           </div>
         </a>
@@ -741,8 +743,8 @@
       <div class="hero-content" id="hero">
         <div class="hero-copy">
           <p style="font-size:0.95rem; letter-spacing:0.14em; text-transform:uppercase; opacity:0.8; margin-bottom:18px;">Selamat Datang di</p>
-          <h1>Dusun Dimanjar 1</h1>
-          <p>Desa Wisata, Alam Lestari, Masyarakat Mandiri. WebGIS ini menyajikan informasi spasial serta potensi wilayah Dimanjar 1 dalam satu portal interaktif yang modern dan mudah digunakan.</p>
+          <h1>Dusun Dimajar 1</h1>
+          <p>Desa Wisata, Alam Lestari, Masyarakat Mandiri. WebGIS ini menyajikan informasi spasial serta potensi wilayah Dimajar 1 dalam satu portal interaktif yang modern dan mudah digunakan.</p>
           <div class="hero-badges">
             <span>🌿 Desa Wisata</span>
             <span>📍 Informasi Spasial</span>
@@ -757,17 +759,17 @@
           <div>
             <h4>Jumlah Penduduk</h4>
             <p class="stat-value">1.285 Jiwa</p>
-            <p class="stat-label">Data Tahun 2024</p>
+            <p class="stat-label">Data Tahun 2026</p>
           </div>
           <div>
-            <h4>Luas Wilayah</h4>
-            <p class="stat-value">312,45 Ha</p>
-            <p class="stat-label">Data Tahun 2024</p>
+            <h4>Jumlah RT</h4>
+            <p class="stat-value">4 RT</p>
+            <p class="stat-label">Data Tahun 2026</p>
           </div>
           <div>
             <h4>Jumlah KK</h4>
             <p class="stat-value">412 KK</p>
-            <p class="stat-label">Data Tahun 2024</p>
+            <p class="stat-label">Data Tahun 2026</p>
           </div>
         </div>
       </div>
@@ -777,17 +779,17 @@
       <div class="about-content">
         <div>
           <div class="section-heading" style="text-align:left; margin-bottom:24px; color:#e6f0da;">
-            <h2>Tentang Dusun Dimanjar 1</h2>
+            <h2>Tentang Dusun Dimajar 1</h2>
             <p>Profil wisata dan nilai lokal yang mendukung perkembangan dusun sebagai destinasi hijau dan mandiri.</p>
           </div>
-          <h1 style="font-size: clamp(2.8rem, 4vw, 4.5rem); margin:0 0 18px; line-height:1.02; letter-spacing:-0.05em; color:#ffffff;">Profil Wisata Dusun Dimanjar 1</h1>
-          <p style="max-width:660px; color: rgba(243, 247, 240, 0.88); font-size:1.05rem; margin-bottom:32px;">Dusun Dimanjar 1 merupakan kawasan dusun wisata unggulan di Desa Sumberarum yang terkenal dengan panorama alam dan daya tarik Pemandian Air Hangat. Keberadaan objek wisata berbasis alam ini menjadi magnet utama yang mendatangkan wisatawan dari berbagai daerah secara berkelanjutan.</p>
+          <h1 style="font-size: clamp(2.8rem, 4vw, 4.5rem); margin:0 0 18px; line-height:1.02; letter-spacing:-0.05em; color:#ffffff;">Profil Wisata Dusun Dimajar 1</h1>
+          <p style="max-width:660px; color: rgba(243, 247, 240, 0.88); font-size:1.05rem; margin-bottom:32px;">Dusun Dimajar 1 merupakan kawasan dusun wisata unggulan di Desa Sumberarum yang terkenal dengan panorama alam dan daya tarik Pemandian Air Hangat. Keberadaan objek wisata berbasis alam ini menjadi magnet utama yang mendatangkan wisatawan dari berbagai daerah secara berkelanjutan.</p>
           <ul class="about-list">
             <li><span>✔</span><div><strong>Air Hangat Banyuroso</strong><br />Pemandian air hangat alami dengan fasilitas ramah keluarga.</div></li>
             <li><span>✔</span><div><strong>Air Hangat Ngesikan</strong><br />Destinasi populer untuk relaksasi dan wisata edukasi.</div></li>
             <li><span>✔</span><div><strong>Sendang Tirta Mukti</strong><br />Tempat ziarah dan wisata spiritual dengan pemandangan asri.</div></li>
             <li><span>✔</span><div><strong>Tirta Sambura</strong><br />Wisata alam dengan sumber mata air jernih dan suasana hening.</div></li>
-            <li><span>✔</span><div><strong>Lingtang Waterpark</strong><br />Area rekreasi keluarga dengan wahana air dan olahraga ringan.</div></li>
+            <li><span>✔</span><div><strong>Lintang Waterpark</strong><br />Area rekreasi keluarga dengan wahana air dan olahraga ringan.</div></li>
           </ul>
         </div>
 
@@ -812,41 +814,41 @@
 
     <section class="gallery-section" id="galeri">
       <div class="gallery-heading">
-        <h2>Galeri Dusun Dimanjar 1</h2>
+        <h2>Galeri Dusun Dimajar 1</h2>
         <p>Foto-foto suasana dusun dan destinasi wisata, tampil mirip dengan tampilan album peta.</p>
       </div>
 
       <div class="gallery-grid">
         <article class="gallery-card large">
-          <img src="https://images.unsplash.com/photo-1500534314209-62b9e3f7bf2f?auto=format&fit=crop&w=1200&q=80" alt="Pemandangan udara Dusun Dimanjar">
+          <img src="https://asendedbanner.s-ul.eu/1yQFs0ns" alt="Pemandangan udara Dusun Dimajar">
           <div class="gallery-caption">Pemandangan Udara Dusun</div>
         </article>
         <article class="gallery-card small">
-          <img src="https://images.unsplash.com/photo-1500534314209-62b9e3f7bf2f?auto=format&fit=crop&w=800&q=80" alt="Area wisata desa">
+          <img src="https://asendedbanner.s-ul.eu/55htQI75" alt="Area wisata desa">
           <div class="gallery-caption">Wisata Alam Dusun</div>
         </article>
         <article class="gallery-card small">
-          <img src="https://images.unsplash.com/photo-1500534314209-62b9e3f7bf2f?auto=format&fit=crop&w=800&q=80" alt="Kolam renang destinasi wisata">
+          <img src="https://asendedbanner.s-ul.eu/pE1VMBvN" alt="Kolam renang destinasi wisata">
           <div class="gallery-caption">Kolam Renang Wisata</div>
         </article>
         <article class="gallery-card small">
-          <img src="https://images.unsplash.com/photo-1500534314209-62b9e3f7bf2f?auto=format&fit=crop&w=800&q=80" alt="Suasana desa dan pengunjung">
+          <img src="https://asendedbanner.s-ul.eu/u1deXoCE" alt="Suasana desa dan pengunjung">
           <div class="gallery-caption">Suasana Desa</div>
         </article>
         <article class="gallery-card small">
-          <img src="https://images.unsplash.com/photo-1500534314209-62b9e3f7bf2f?auto=format&fit=crop&w=800&q=80" alt="Waterpark dan wahana air">
+          <img src="https://asendedbanner.s-ul.eu/hb0X7rBH" alt="Waterpark dan wahana air">
           <div class="gallery-caption">Wahana Air</div>
         </article>
       </div>
 
       <div class="media-row">
         <div class="video-card">
-          <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" title="Video Profil Dusun" allowfullscreen="" loading="lazy"></iframe>
+          <iframe src="https://www.youtube.com/embed/K0IUjH28IMo" title="Video Profil Dusun" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="embed-card">
           <div class="embed-info">
             <h3>Album Peta Dusun</h3>
-            <p>Link embed album peta menampilkan koleksi lokasi dan foto perjalanan Dusun Dimanjar 1.</p>
+            <p>Link embed album peta menampilkan koleksi lokasi dan foto perjalanan Dusun Dimajar 1.</p>
             <a class="btn-link" href="https://www.google.com/maps" target="_blank" rel="noreferrer">Buka Album Peta</a>
           </div>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509663!2d144.9537353155042!3d-37.81627997975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f71d5b%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1614217223567!5m2!1sen!2sus" title="Embed Album Peta" loading="lazy"></iframe>
@@ -856,7 +858,7 @@
 
     <section class="section potensi-section" id="potensi">
       <div class="section-heading">
-        <h2>Potensi Utama Dusun Dimanjar 1</h2>
+        <h2>Potensi Utama Dusun Dimajar 1</h2>
         <p>Sumber daya alam dan kegiatan ekonomi yang menjadi kekuatan utama wilayah kami.</p>
       </div>
       <div class="cards-grid">
@@ -880,212 +882,68 @@
 
     <section class="section map-section" id="map-section">
       <div class="section-heading">
-        <h2>Jelajahi Dimanjar 1 Secara Interaktif</h2>
-        <p>Temukan informasi spasial dan potensi wilayah Dusun Dimanjar 1 melalui peta interaktif yang informatif dan mudah digunakan.</p>
+        <h2>Jelajahi Dimajar 1 Secara Interaktif</h2>
+        <p>Temukan informasi spasial dan potensi wilayah Dusun Dimajar 1 melalui peta interaktif yang informatif dan mudah digunakan.</p>
       </div>
 
       <div class="map-actions">
-        <button id="btnTernak" class="active">Sebaran Kandang Ternak</button>
-        <button id="btnRentan">Distribusi Kelompok Rentan</button>
-        <button id="btnPenerangan">Kondisi Penerangan Jalan</button>
+        <button id="btnKepadatan" class="active">🐄 Sebaran Kandang Ternak</button>
+        <button id="btnPenggunaan">🏠 Penggunaan Lahan</button>
       </div>
 
       <div id="map"></div>
 
       <div class="legend">
-        <div class="legend-item"><span class="legend-swatch" style="background:#4a8d5f"></span>Sebaran ternak</div>
-        <div class="legend-item"><span class="legend-swatch" style="background:#a35ab8"></span>Kelompok rentan</div>
-        <div class="legend-item"><span class="legend-swatch" style="background:#f39c12"></span>Penerangan jalan</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:#4a8d5f"></span>Area Kandang Ternak</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:#e74c3c"></span>Tempat Tinggal (137)</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:#aed6f1"></span>Pekarangan (26)</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:#27ae60"></span>Perkebunan (23)</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:#f39c12"></span>Peternakan (17)</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:#e91e63"></span>Perdagangan & Jasa (8)</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:#3498db"></span>Pariwisata (7)</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:#c0392b; height:3px; border-radius:0;"></span>Jalan Lokal (9)</div>
+        <div class="legend-item"><span class="legend-swatch" style="background:#e67e22; height:3px; border-radius:0;"></span>Jalan Lain (1)</div>
       </div>
 
       <div class="map-summary">
         <article class="map-card">
-          <h3>Sebaran Kandang Ternak</h3>
+          <h3>� Sebaran Kandang Ternak</h3>
           <p>Peta ini menunjukkan area kandang dan proporsi jumlah ternak di masing-masing zona.</p>
         </article>
         <article class="map-card">
-          <h3>Distribusi Kelompok Rentan</h3>
-          <p>Titik lokasi kelompok rentan seperti lansia, anak-anak, dan ibu hamil untuk memudahkan perencanaan sosial.</p>
+          <h3>🏠 Penggunaan Lahan</h3>
+          <p>Visualisasi penggunaan lahan di Dusun Dimajar 1 berdasarkan klasifikasi PL.</p>
         </article>
-        <article class="map-card">
-          <h3>Kondisi Penerangan Jalan</h3>
-          <p>Pantau kondisi sebaran penerangan jalan untuk mendukung keamanan dan aktivitas warga di malam hari.</p>
-        </article>
+      </div>
+
+      <div class="chart-section" style="max-width:1200px; margin:48px auto 0; padding:0 32px;">
+        <div class="section-heading">
+          <h2>📊 Grafik Distribusi Kelompok Rentan</h2>
+          <p>Visualisasi data kelompok rentan seperti lansia, anak-anak, dan ibu hamil untuk memudahkan perencanaan sosial.</p>
+        </div>
+        <div style="background:#fff; border-radius:24px; padding:32px; box-shadow:var(--shadow); max-width:700px; margin:0 auto;">
+          <canvas id="chartRentan" height="300"></canvas>
+        </div>
+      </div>
+
+      <div class="chart-section" style="max-width:1200px; margin:48px auto 0; padding:0 32px;">
+        <div class="section-heading">
+          <h2>🐐🐔 Grafik Populasi Ternak per RT</h2>
+          <p>Visualisasi jumlah kambing dan ayam berdasarkan data SebaranKandang di setiap RT Dusun Dimajar 1.</p>
+        </div>
+        <div style="background:#fff; border-radius:24px; padding:32px; box-shadow:var(--shadow); max-width:700px; margin:0 auto;">
+          <canvas id="chartTernak" height="300"></canvas>
+        </div>
       </div>
     </section>
 
     <footer id="kontak">
-      © 2024 WebGIS Dimanjar 1. Menyajikan informasi wilayah secara visual, modern, dan mudah dipahami.
+      © 2026 WebGIS Dimajar 1. Menyajikan informasi wilayah secara visual, modern, dan mudah dipahami.
     </footer>
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
-    const ternakGeoJSON = {
-      "type": "FeatureCollection",
-      "features": [
-        {
-          "type": "Feature",
-          "properties": {
-            "name": "Kandang Timur",
-            "ternak_total": 120,
-            "proporsi": "35%"
-          },
-          "geometry": {
-            "type": "Polygon",
-            "coordinates": [
-              [
-                [110.2925, -7.5050],
-                [110.3000, -7.5050],
-                [110.3020, -7.5135],
-                [110.2950, -7.5150],
-                [110.2925, -7.5050]
-              ]
-            ]
-          }
-        },
-        {
-          "type": "Feature",
-          "properties": {
-            "name": "Kandang Barat",
-            "ternak_total": 90,
-            "proporsi": "26%"
-          },
-          "geometry": {
-            "type": "Polygon",
-            "coordinates": [
-              [
-                [110.2860, -7.4950],
-                [110.2920, -7.4950],
-                [110.2940, -7.5020],
-                [110.2880, -7.5030],
-                [110.2860, -7.4950]
-              ]
-            ]
-          }
-        },
-        {
-          "type": "Feature",
-          "properties": {
-            "name": "Kandang Selatan",
-            "ternak_total": 135,
-            "proporsi": "39%"
-          },
-          "geometry": {
-            "type": "Polygon",
-            "coordinates": [
-              [
-                [110.2970, -7.5200],
-                [110.3050, -7.5180],
-                [110.3075, -7.5250],
-                [110.3000, -7.5280],
-                [110.2970, -7.5200]
-              ]
-            ]
-          }
-        }
-      ]
-    };
-
-    const rentanGeoJSON = {
-      "type": "FeatureCollection",
-      "features": [
-        {
-          "type": "Feature",
-          "properties": {
-            "name": "Kelompok Lansia",
-            "kategori": "Lansia",
-            "count": 42,
-            "level": "Tinggi"
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [110.2980, -7.5010]
-          }
-        },
-        {
-          "type": "Feature",
-          "properties": {
-            "name": "Kelompok Ibu Hamil",
-            "kategori": "Ibu Hamil",
-            "count": 18,
-            "level": "Sedang"
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [110.3030, -7.5075]
-          }
-        },
-        {
-          "type": "Feature",
-          "properties": {
-            "name": "Kelompok Anak-anak",
-            "kategori": "Anak-anak",
-            "count": 33,
-            "level": "Tinggi"
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [110.2890, -7.5085]
-          }
-        }
-      ]
-    };
-
-    const peneranganGeoJSON = {
-      "type": "FeatureCollection",
-      "features": [
-        {
-          "type": "Feature",
-          "properties": {
-            "name": "Jalan Utama",
-            "status": "Baik",
-            "keterangan": "Penerangan jalan terpasang sepanjang koridor utama"
-          },
-          "geometry": {
-            "type": "LineString",
-            "coordinates": [
-              [110.2910, -7.5025],
-              [110.3000, -7.5060],
-              [110.3070, -7.5130]
-            ]
-          }
-        },
-        {
-          "type": "Feature",
-          "properties": {
-            "name": "Jalan Sekunder",
-            "status": "Kurang",
-            "keterangan": "Beberapa titik penerangan padam dan jarak tiang panjang"
-          },
-          "geometry": {
-            "type": "LineString",
-            "coordinates": [
-              [110.2850, -7.4940],
-              [110.2920, -7.4970],
-              [110.2950, -7.5035]
-            ]
-          }
-        },
-        {
-          "type": "Feature",
-          "properties": {
-            "name": "Jalan Lingkungan",
-            "status": "Tidak Ada",
-            "keterangan": "Belum tersedia penerangan pada lingkungan permukiman"
-          },
-          "geometry": {
-            "type": "LineString",
-            "coordinates": [
-              [110.2985, -7.5190],
-              [110.3035, -7.5220],
-              [110.3055, -7.5270]
-            ]
-          }
-        }
-      ]
-    };
-
     document.addEventListener('DOMContentLoaded', () => {
       console.log('Leaflet status:', typeof L !== 'undefined' ? 'loaded' : 'not loaded');
       const nav = document.querySelector('.nav');
@@ -1096,74 +954,261 @@
       window.addEventListener('scroll', updateNavState, { passive: true });
 
       const map = L.map('map', {
-        center: [-7.5132, 110.2987],
-        zoom: 14,
+        center: [-7.511, 110.296],
+        zoom: 15,
         zoomControl: true
       });
 
       L.control.scale({ position: 'bottomleft' }).addTo(map);
 
-      const osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors',
         maxZoom: 19
       }).addTo(map);
 
-      const ternakLayer = L.geoJSON(ternakGeoJSON, {
-        style: {
-          color: '#4a8d5f',
-          weight: 3,
-          fillColor: '#8dcab5',
-          fillOpacity: 0.4
-        },
-        onEachFeature(feature, layer) {
-          layer.bindPopup(`<strong>${feature.properties.name}</strong><br />Total ternak: ${feature.properties.ternak_total}<br />Proporsi: ${feature.properties.proporsi}`);
+      let kepadatanLayer, penggunaanLayer;
+      let currentLayer = null;
+
+      // Load GeoJSON dari file eksternal
+      Promise.all([
+        fetch('JSON/SebaranKandangData.json').then(r => r.json()),
+        fetch('JSON/JALAN_JSON.geojson').then(r => r.json()),
+        fetch('JSON/PL_JSON.geojson').then(r => r.json()),
+        fetch('data/rentan.geojson').then(r => r.json())
+      ]).then(([kandangData, jalanJsonData, plJsonData, rentanData]) => {
+
+        // --- Konversi EPSG:32749 → EPSG:4326 ---
+        proj4.defs('EPSG:32749', '+proj=utm +zone=49 +south +datum=WGS84 +units=m +no_defs');
+        function convertCoords(coords) {
+          if (typeof coords[0] === 'number') {
+            return proj4('EPSG:32749', 'EPSG:4326', coords);
+          }
+          return coords.map(convertCoords);
         }
-      });
-
-      const rentanLayer = L.geoJSON(rentanGeoJSON, {
-        pointToLayer(feature, latlng) {
-          return L.circleMarker(latlng, {
-            radius: 12,
-            fillColor: '#a35ab8',
-            color: '#8a3cac',
-            weight: 2,
-            fillOpacity: 0.9
-          });
-        },
-        onEachFeature(feature, layer) {
-          layer.bindPopup(`<strong>${feature.properties.name}</strong><br />Kategori: ${feature.properties.kategori}<br />Jumlah: ${feature.properties.count}<br />Level: ${feature.properties.level}`);
+        function convertGeoJSON(geojson) {
+          const features = geojson.features.map(f => ({
+            ...f,
+            geometry: { ...f.geometry, coordinates: convertCoords(f.geometry.coordinates) }
+          }));
+          return { type: 'FeatureCollection', features };
         }
-      });
 
-      const peneranganLayer = L.geoJSON(peneranganGeoJSON, {
-        style(feature) {
-          const status = feature.properties.status;
-          return {
-            color: status === 'Baik' ? '#2f9d56' : status === 'Kurang' ? '#f39c12' : '#d35400',
-            weight: 5,
-            opacity: 0.88
-          };
-        },
-        onEachFeature(feature, layer) {
-          layer.bindPopup(`<strong>${feature.properties.name}</strong><br />Status: ${feature.properties.status}<br />${feature.properties.keterangan}`);
-        }
-      });
+        const ternakData = convertGeoJSON(kandangData);
+        const jalanData = convertGeoJSON(jalanJsonData);
+        const plData = convertGeoJSON(plJsonData);
 
-      const mapGroups = {
-        ternak: ternakLayer,
-        rentan: rentanLayer,
-        penerangan: peneranganLayer
-      };
-
-      function showLayer(key) {
-        Object.keys(mapGroups).forEach(layerKey => {
-          if (map.hasLayer(mapGroups[layerKey])) {
-            map.removeLayer(mapGroups[layerKey]);
+        // --- PETA 1: KEPADATAN (Sebaran Kandang Ternak) ---
+        kepadatanLayer = L.geoJSON(ternakData, {
+          style: {
+            color: '#4a8d5f',
+            weight: 3,
+            fillColor: '#8dcab5',
+            fillOpacity: 0.4
+          },
+          onEachFeature(feature, layer) {
+            const p = feature.properties || {};
+            const name = p.NAMOBJ || p.DUSUN || p.name || ('Kandang #' + (feature.id != null ? feature.id : '-'));
+            const rt = p.RT ? `<br />RT: ${p.RT}` : '';
+            const ayam = p.ayam != null ? `<br />Ayam: ${p.ayam} ekor` : '';
+            const kmbg = p.kmbg != null ? `<br />Kambing: ${p.kmbg} ekor` : '';
+            const area = p.Shape_Area ? `<br />Luas: ${(p.Shape_Area / 10000).toFixed(2)} Ha` : '';
+            layer.bindPopup(`<strong>${name}</strong>${rt}${ayam}${kmbg}${area}`);
           }
         });
-        map.addLayer(mapGroups[key]);
-        if (mapGroups[key].getBounds().isValid()) {
-          map.fitBounds(mapGroups[key].getBounds().pad(0.2));
+
+        // --- PETA 2: PENGGUNAAN LAHAN (Jalan + PL) ---
+        // Palet warna berdasarkan kolom PL
+        const plWarna = {
+          'Tempat Tinggal': '#e74c3c',
+          'Pekarangan': '#aed6f1',
+          'Perkebunan': '#27ae60',
+          'Peternakan': '#f39c12',
+          'Perdagangan dan Jasa': '#e91e63',
+          'Pariwisata': '#3498db',
+          'Vegetasi Campuran': '#2ecc71',
+          'Industri dan Pergudangan': '#7f8c8d',
+          'Hutan Rakyat': '#1e8449',
+          'Kebun Campur': '#82e0aa',
+          'Lahan Terbuka': '#f9e79f',
+          'Tegalan': '#d4ac0d',
+          'Rumput': '#abebc6',
+          'Peribadatan': '#8e44ad',
+          'Hankam': '#34495e',
+          'Perikanan Tawar': '#5dade2',
+          'Sawah': '#58d68d',
+          'Transportasi': '#616a6b'
+        };
+        function plColor(pl) {
+          return plWarna[pl] || '#bdc3c7';
+        }
+
+        const plSubLayer = L.geoJSON(plData, {
+          style(feature) {
+            const pl = feature.properties.PL || '?';
+            const warna = plColor(pl);
+            return {
+              color: warna,
+              weight: 1.5,
+              fillColor: warna,
+              fillOpacity: 0.4
+            };
+          },
+          onEachFeature(feature, layer) {
+            const p = feature.properties;
+            const pl = p.PL || '-';
+            const fungsi = p.FUNGSI || '-';
+            const jenis = p.JENIS || '-';
+            layer.bindPopup(`<strong>${pl}</strong>`);
+          }
+        });
+
+        // Simbolisasi Jalan berdasarkan Kelas
+        const kelasStyle = {
+          'Jalan Lokal': { color: '#c0392b', weight: 4, opacity: 0.9 },
+          'Jalan Lain': { color: '#e67e22', weight: 2.5, opacity: 0.75 }
+        };
+
+        const jalanSubLayer = L.geoJSON(jalanData, {
+          style(feature) {
+            const k = feature.properties.Kelas;
+            return kelasStyle[k] || { color: '#95a5a6', weight: 2, opacity: 0.6 };
+          },
+          onEachFeature(feature, layer) {
+            const p = feature.properties;
+            const k = p.Kelas || '-';
+            layer.bindPopup(`<strong>${p.Toponim || 'Jalan'}</strong><br />Kelas: ${k}<br />Sub Unsur: ${p.Sub_Unsur || '-'}`);
+          }
+        });
+
+        penggunaanLayer = L.layerGroup([plSubLayer, jalanSubLayer]);
+
+        // Tampilkan layer Kepadatan sebagai default
+        map.addLayer(kepadatanLayer);
+        currentLayer = 'kepadatan';
+        if (kepadatanLayer.getBounds().isValid()) {
+          map.fitBounds(kepadatanLayer.getBounds().pad(0.2));
+        }
+        setTimeout(() => map.invalidateSize(), 200);
+
+        // --- GRAFIK: RENTAN ---
+        const labels = rentanData.features.map(f => f.properties.name);
+        const values = rentanData.features.map(f => f.properties.count);
+        const levels = rentanData.features.map(f => f.properties.level);
+
+        const bgColors = levels.map(l =>
+          l === 'Tinggi' ? 'rgba(220, 53, 69, 0.75)' : 'rgba(255, 193, 7, 0.75)'
+        );
+
+        new Chart(document.getElementById('chartRentan'), {
+          type: 'bar',
+          data: {
+            labels: labels,
+            datasets: [{
+              label: 'Jumlah',
+              data: values,
+              backgroundColor: bgColors,
+              borderColor: bgColors.map(c => c.replace('0.75', '1')),
+              borderWidth: 2,
+              borderRadius: 8,
+              barThickness: 60
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              legend: { display: false },
+              title: {
+                display: true,
+                text: 'Distribusi Kelompok Rentan per Kategori',
+                font: { size: 16, weight: 'bold' },
+                padding: { bottom: 20 }
+              },
+              tooltip: {
+                callbacks: {
+                  afterLabel(ctx) {
+                    return 'Level: ' + levels[ctx.dataIndex];
+                  }
+                }
+              }
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                title: { display: true, text: 'Jumlah Orang' },
+                ticks: { stepSize: 5 }
+              }
+            }
+          }
+        });
+
+        console.log('✅ Data dimuat: Ternak, Penggunaan Lahan, Rentan (grafik)');
+
+        // --- GRAFIK: POPULASI TERNAK (Kambing & Ayam per RT) ---
+        const rtLabels = kandangData.features.map(f => (f.properties && f.properties.RT) ? f.properties.RT : '?');
+        const kmbgValues = kandangData.features.map(f => (f.properties && f.properties.kmbg != null) ? f.properties.kmbg : 0);
+        const ayamValues = kandangData.features.map(f => (f.properties && f.properties.ayam != null) ? f.properties.ayam : 0);
+
+        new Chart(document.getElementById('chartTernak'), {
+          type: 'bar',
+          data: {
+            labels: rtLabels,
+            datasets: [
+              {
+                label: '🐐 Kambing (ekor)',
+                data: kmbgValues,
+                backgroundColor: 'rgba(90, 161, 78, 0.75)',
+                borderColor: 'rgba(90, 161, 78, 1)',
+                borderWidth: 2,
+                borderRadius: 6
+              },
+              {
+                label: '🐔 Ayam (ekor)',
+                data: ayamValues,
+                backgroundColor: 'rgba(243, 156, 18, 0.75)',
+                borderColor: 'rgba(243, 156, 18, 1)',
+                borderWidth: 2,
+                borderRadius: 6
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              legend: { position: 'top' },
+              title: {
+                display: true,
+                text: 'Populasi Kambing & Ayam per RT',
+                font: { size: 16, weight: 'bold' },
+                padding: { bottom: 20 }
+              }
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                title: { display: true, text: 'Jumlah (ekor)' },
+                ticks: { stepSize: 5 }
+              }
+            }
+          }
+        });
+      }).catch(err => {
+        console.error('❌ Gagal memuat data GeoJSON:', err);
+      });
+
+      // --- Toggle antar peta ---
+      function showLayer(key) {
+        if (currentLayer === key) return;
+        if (currentLayer === 'kepadatan' && kepadatanLayer) map.removeLayer(kepadatanLayer);
+        if (currentLayer === 'penggunaan' && penggunaanLayer) map.removeLayer(penggunaanLayer);
+
+        if (key === 'kepadatan' && kepadatanLayer) {
+          map.addLayer(kepadatanLayer);
+          currentLayer = 'kepadatan';
+          if (kepadatanLayer.getBounds().isValid()) map.fitBounds(kepadatanLayer.getBounds().pad(0.2));
+        } else if (key === 'penggunaan' && penggunaanLayer) {
+          map.addLayer(penggunaanLayer);
+          currentLayer = 'penggunaan';
+          if (penggunaanLayer.getBounds().isValid()) map.fitBounds(penggunaanLayer.getBounds().pad(0.2));
         }
         setTimeout(() => map.invalidateSize(), 200);
       }
@@ -1173,23 +1218,15 @@
         document.getElementById(buttonId).classList.add('active');
       }
 
-      document.getElementById('btnTernak').addEventListener('click', () => {
-        showLayer('ternak');
-        setActiveButton('btnTernak');
+      document.getElementById('btnKepadatan').addEventListener('click', () => {
+        setActiveButton('btnKepadatan');
+        showLayer('kepadatan');
       });
 
-      document.getElementById('btnRentan').addEventListener('click', () => {
-        showLayer('rentan');
-        setActiveButton('btnRentan');
+      document.getElementById('btnPenggunaan').addEventListener('click', () => {
+        setActiveButton('btnPenggunaan');
+        showLayer('penggunaan');
       });
-
-      document.getElementById('btnPenerangan').addEventListener('click', () => {
-        showLayer('penerangan');
-        setActiveButton('btnPenerangan');
-      });
-
-      showLayer('ternak');
-      setTimeout(() => map.invalidateSize(), 250);
     });
   </script>
 </body>
