@@ -4,10 +4,10 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Kelompok Lansia",
-        "kategori": "Lansia",
-        "count": 42,
-        "level": "Tinggi"
+        "name": "Lanjut Usia",
+        "kategori": "Lanjut Usia",
+        "count": 23,
+        "level": "Sedang"
       },
       "geometry": {
         "type": "Point",
@@ -17,10 +17,10 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Kelompok Ibu Hamil",
-        "kategori": "Ibu Hamil",
-        "count": 18,
-        "level": "Sedang"
+        "name": "Disabilitas",
+        "kategori": "Disabilitas",
+        "count": 2,
+        "level": "Rendah"
       },
       "geometry": {
         "type": "Point",
@@ -30,10 +30,10 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Kelompok Anak-anak",
-        "kategori": "Anak-anak",
-        "count": 33,
-        "level": "Tinggi"
+        "name": "Balita",
+        "kategori": "Balita",
+        "count": 10,
+        "level": "Rendah"
       },
       "geometry": {
         "type": "Point",
